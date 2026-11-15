@@ -76,8 +76,8 @@ use Illuminate\Support\Facades\Mail;
 
 Route::get('/send-welcome', function () {
 
-    $recipientEmail = 'qadirkhm941@gmail.com';
-    $name = 'Qadir Sir';
+    $recipientEmail = 'receiver email';
+    $name = 'receiver name or anything else';
 
     // Sends a real email via Gmail SMTP
     Mail::to($recipientEmail)->send(new WelcomeEmail($name));
